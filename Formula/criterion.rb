@@ -6,11 +6,7 @@ class Criterion < Formula
   homepage "https://github.com/Snaipe/Criterion"
   version "2.3.3"
   head $repo
-  url  $repo, :tag => "v2.3.3"
-
-  devel do
-    url $repo
-  end
+  url  $repo, :branch => "bleeding"
 
   depends_on "nanomsg"
   depends_on "cmake"    => :build
