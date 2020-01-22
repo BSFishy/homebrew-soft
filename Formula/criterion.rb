@@ -12,6 +12,7 @@ class Criterion < Formula
 
   devel do
     url  $repo, :branch => "bleeding"
+    version "2.3.3"
   end
 
   depends_on "nanomsg"
