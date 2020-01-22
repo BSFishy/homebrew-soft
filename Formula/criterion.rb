@@ -11,9 +11,9 @@ class Criterion < Formula
   depends_on "nanomsg"
   depends_on "cmake"    => :build
 
-  devel do {
-    url $repo, :branch => "bleeding"
-  }
+  devel do
+    url  $repo, :branch => "bleeding"
+  end
 
   def install
     system "cmake",
