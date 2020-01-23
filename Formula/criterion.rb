@@ -16,7 +16,7 @@ class Criterion < Formula
   end
 
   depends_on "nanomsg"
-  depends_on "cmake" => :build if not build.devel?
+  depends_on "cmake" => :build
   depends_on "meson" => :build if build.devel?
 
   def install
