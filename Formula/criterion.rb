@@ -26,6 +26,8 @@ class Criterion < Formula
           "-Dprefix=#{prefix}",
           "-Dlibdir=lib",
           "-Di18n=disabled",
+          "-Dtests=false",
+          "-Dsamples=false",
           "build"
       system "ninja -C build install"
     else
