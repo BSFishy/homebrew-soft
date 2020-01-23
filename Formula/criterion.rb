@@ -25,7 +25,7 @@ class Criterion < Formula
           "-Dbuildtype=debugoptimized",
           "-Dprefix=#{prefix}",
           "-Dlibdir=lib",
-          "-Di18n=disabled"
+          "-Di18n=disabled",
           "build"
       system "ninja -C build install"
     else
