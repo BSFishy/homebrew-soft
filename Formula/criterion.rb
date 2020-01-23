@@ -6,6 +6,7 @@ class Criterion < Formula
   homepage "https://github.com/Snaipe/Criterion"
   version "2.3.3"
   url  $repo, :tag => "v2.3.3"
+  head $repo
 
   devel do
     url  $repo, :branch => "bleeding"
